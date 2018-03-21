@@ -8,4 +8,7 @@
           name: nginx
           update_cache: true
           allow_unauthenticated: true
-          
+      - name: Install index.html
+        template:
+          src: files/index.html
+          dest: /var/www/html
